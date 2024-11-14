@@ -16,6 +16,10 @@ def cmd_group():
     show_default=True,  # show default in help
 )
 def sin(number):
+    """Calculate the sine of NUMBER values between 0 and 2 pi.
+
+    NUMBER is the number of steps to calculate the sin for.
+    """
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "sin (x)": np.sin(x)})
     print(df)
@@ -29,6 +33,10 @@ def sin(number):
     show_default=True,  # show default in help
 )
 def tan(number):
+    """Calculate the tangent of NUMBER values between 0 and 2 pi.
+
+    NUMBER is the number of steps to calculate the sin for.
+    """
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "tan (x)": np.tan(x)})
     print(df)
